@@ -1,8 +1,3 @@
-import requests
-import os
-from dotenv import find_dotenv, load_dotenv
-
-
 path = find_dotenv(".env.txt",True)
 load_dotenv(path)
 
@@ -38,8 +33,6 @@ for interval in range(no_intervals):
 
 descriptions_n = ["".join(i) for i in descriptions] # joins each interval to a full string
 print("\n")
-
-import smtplib
 
 my_email = os.getenv("my_email")
 password = os.getenv("email_password")
