@@ -40,9 +40,7 @@ my_email = os.environ.get("MY_EMAIL")
 password = os.environ.get("EMAIL_PASSWORD")
 
 if will_rain:
-    with smtplib.SMTP("smtp.gmail.com",
-                      port=587) as connection:  # this code belongs to the email of the SENDER, not recipient
+    with smtplib.SMTP("smtp.gmail.com", port=587) as connection:  # this code belongs to the email of the SENDER, not recipient
         connection.starttls()
         connection.login(user=my_email, password=password)
-        connection.sendmail(from_addr=my_email, to_addrs=my_email,
-                            msg=f"Subject:Rain predicted\n\nBring an umbrella today!\nForecast: {"".join(descriptions_n)}")
+        connection.sendmail(from_addr=my_email, to_addrs=my_email, msg=f"Subject:Rain predicted\n\nBring an umbrella today!\nForecast: {"".join(descriptions_n)}")
