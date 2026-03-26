@@ -1,5 +1,5 @@
 import smtplib
-#import requests
+import requests
 import os
 
 api_key = os.environ.get("OWM_API_KEY") # security, or modifying recepients of mail lists, etc.
