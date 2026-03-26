@@ -1,7 +1,6 @@
-import dotenv
-
-#path = dotenv.find_dotenv(".env.txt",True)
-#dotenv.load_dotenv(path)
+import smtplib
+import requests
+import os
 
 api_key = os.getenv("OWM_API_KEY") # security, or modifying recepients of mail lists, etc.
 lat = 51.690090
