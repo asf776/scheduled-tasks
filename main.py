@@ -1,3 +1,5 @@
+import dotenv
+
 path = dotenv.find_dotenv(".env.txt",True)
 dotenv.load_dotenv(path)
 
