@@ -17,7 +17,7 @@ on:
     - cron: '0 16 * * *'
 
   # This adds a "Run workflow" button so you can test manually
-  workflow_dispatch:
+  # workflow_dispatch:
 
 jobs:
   run:
