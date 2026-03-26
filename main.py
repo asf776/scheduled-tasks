@@ -34,8 +34,8 @@ for interval in range(no_intervals):
 descriptions_n = ["".join(i) for i in descriptions] # joins each interval to a full string
 print("\n")
 
-my_email = os.getenv("my_email")
-password = os.getenv("email_password")
+my_email = os.getenv("MY_EMAIL")
+password = os.getenv("EMAIL_PASSWORD")
 
 if will_rain:
     with smtplib.SMTP("smtp.gmail.com",
