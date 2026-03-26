@@ -2,7 +2,7 @@ import smtplib
 import requests
 import os
 
-api_key = os.getenv("OWM_API_KEY") # security, or modifying recepients of mail lists, etc.
+api_key = os.environ.get("OWM_API_KEY") # security, or modifying recepients of mail lists, etc.
 lat = 51.690090
 long = 5.303690
 
@@ -35,8 +35,8 @@ for interval in range(no_intervals):
 descriptions_n = ["".join(i) for i in descriptions] # joins each interval to a full string
 print("\n")
 
-my_email = os.getenv("MY_EMAIL")
-password = os.getenv("EMAIL_PASSWORD")
+my_email = os.environ.get("MY_EMAIL")
+password = os.environ.get("EMAIL_PASSWORD")
 
 if will_rain:
     with smtplib.SMTP("smtp.gmail.com",
