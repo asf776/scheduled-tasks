@@ -37,7 +37,7 @@ descriptions_n = ["".join(i) for i in descriptions] # joins each interval to a f
 print("\n")
 
 my_email = os.environ.get("MY_EMAIL")
-password = os.environ.get("EMAIL_PASSWORD")
+password = os.environ.get("MY_PASSWORD")
 
 if will_rain:
     with smtplib.SMTP("smtp.gmail.com", port=587) as connection:  # this code belongs to the email of the SENDER, not recipient
