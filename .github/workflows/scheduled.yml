@@ -16,7 +16,7 @@ on:
     # ╚═══════════════════════════════════════════════════════════════╝
     - cron: '0 19 * * *'
 
-  This adds a "Run workflow" button so you can test manually
+  #This adds a "Run workflow" button so you can test manually
   workflow_dispatch:
 
 jobs:
